@@ -1,9 +1,13 @@
-import aprovacao.Aluno;
-
 public class Main {
     public static void main(String[] args) {
-        Aluno aluno = new Aluno();
-        aluno.setFrequencia(10);
-        System.out.println("Frequência: " + aluno.getFrequencia());
+        Funcionario funcionario = new Funcionario();
+
+        funcionario.setSalario(2200.0);
+        System.out.println("Salario mensal: R$ " + funcionario.getSalario());
+        System.out.println("Valor por hora: R$ " + funcionario.getValorHora());
+
+        funcionario.setSalario(4400.0);
+        System.out.println("Salario mensal: R$ " + funcionario.getSalario());
+        System.out.println("Valor por hora: R$ " + funcionario.getValorHora());
     }
 }
